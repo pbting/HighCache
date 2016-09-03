@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties>
+	<property id="cache.memory">true</property>
+	<property id="cache.capacity">4</property>
+	<property id="lazy.create">true</property>
+	<property id="cache.algorithm"> audaque.com.pbting.concurrent.cache.core.LRFUByExConcurrentCache</property>
+	<property id="cache.unlimited.disk">false</property>
+	<property id="cache.persistence.overflow.only">true</property>
+	<property id="refresh.period">10</property>
+	<property id="cache.path">D:\\nchucache\\cache</property>
+	<property id="cache.key">highCache_cache</property>
+	<property id="cache.blocking">false</property>
+	<!-- 这里可以配置一个缓存容器，也可以配置多个缓存容器 -->
+	<property id="cache.names">DataBaseCache</property>
+</properties>

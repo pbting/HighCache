@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<initmapper>
+	<!-- 每些sql 语句的执行都对应一个sql 解析器（扩展的话就用package 来处理，一个sql 任务执行器，对应一批的sql执行，任务分流处理） -->
+	<sqlExecutor>
+		audaque.com.pbting.test.task.JDBCInitMapperSqlExecutorTask
+	</sqlExecutor>
+	
+	<!-- 预先加载所有的省份,如果sql 语句中需要传递参数，则使用 -->
+	<mapper>
+		<![CDATA[SELECT * FROM cachetest.t_school where _id>0 and _id<=10000]]>
+	</mapper>
+	
+	<mapper>
+		<![CDATA[SELECT * FROM cachetest.t_student t where _student_id>=11045101 and _student_id<=11045136]]>
+	</mapper>
+</initmapper>
